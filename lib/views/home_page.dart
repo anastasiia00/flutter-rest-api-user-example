@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last
-
 import 'package:api1/models/post.dart';
 import 'package:api1/services/remote_services.dart';
 import 'package:api1/widgets/skeleton_card.dart';
@@ -25,7 +23,7 @@ class _HomePageViewState extends State<HomePageView> {
   getData() async {
     posts = await RemoteServices().getPosts();
     Future.delayed(
-        Duration(
+        const Duration(
           seconds: 2,
         ), () {
       {

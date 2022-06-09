@@ -31,8 +31,7 @@ class SkeletonCardWidget extends StatelessWidget {
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            // ignore: prefer_const_literals_to_create_immutables
-            children: [
+            children: const [
               Skeleton(
                 width: 85,
               ),

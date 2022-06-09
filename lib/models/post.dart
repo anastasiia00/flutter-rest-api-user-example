@@ -1,10 +1,14 @@
 import 'dart:convert';
 
-List<Welcome> welcomeFromJson(String str) =>
-    List<Welcome>.from(json.decode(str).map((x) => Welcome.fromJson(x)));
+List<Welcome> welcomeFromJson(String str) {
+  print(str);
+  return List<Welcome>.from(json.decode(str).map((x) => Welcome.fromJson(x)));
+}
 
-String welcomeToJson(List<Welcome> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String welcomeToJson(List<Welcome> data) {
+  print(data);
+  return json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+}
 
 class Welcome {
   Welcome({
